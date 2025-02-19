@@ -1,0 +1,17 @@
+<h2>Document List</h2>
+
+<!-- File List -->
+<ul>
+  <li *ngFor="let document of documents">
+    <span (click)="selectDocument(document)" class="clickable">{{ document.fileName }}</span>
+    <button (click)="deleteFile(document.fileName)" class="delete-btn">🗑️</button>
+  </li>
+</ul>
+
+<!-- File Editor -->
+<div *ngIf="selectedDocument">
+  <h3>Editing: {{ selectedDocument.fileName }}</h3>
+  <textarea [(ngModel)]="selectedDocument.content" rows="10" cols="50"></textarea>
+  <br />
+  <button (click)="saveChanges()" class="save-btn">Save Changes</button>
+</div>

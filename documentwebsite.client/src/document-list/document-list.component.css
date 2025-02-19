@@ -1,0 +1,40 @@
+.clickable {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+  .clickable:hover {
+    color: darkblue;
+  }
+
+.delete-btn {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+
+.save-btn {
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+  .save-btn:hover {
+    background-color: darkgreen;
+  }
+
+textarea {
+  width: 100%;
+  font-size: 14px;
+}

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "documentwebsite.client", "documentwebsite.client\documentwebsite.client.esproj", "{C8FDCB12-F2CD-40B5-E1A1-C9A4DA1FEDDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentWebsite.Server", "DocumentWebsite.Server\DocumentWebsite.Server.csproj", "{F55D58EB-604D-4378-8A19-CD42A16C48C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8FDCB12-F2CD-40B5-E1A1-C9A4DA1FEDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FDCB12-F2CD-40B5-E1A1-C9A4DA1FEDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FDCB12-F2CD-40B5-E1A1-C9A4DA1FEDDE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C8FDCB12-F2CD-40B5-E1A1-C9A4DA1FEDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FDCB12-F2CD-40B5-E1A1-C9A4DA1FEDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FDCB12-F2CD-40B5-E1A1-C9A4DA1FEDDE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F55D58EB-604D-4378-8A19-CD42A16C48C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55D58EB-604D-4378-8A19-CD42A16C48C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55D58EB-604D-4378-8A19-CD42A16C48C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55D58EB-604D-4378-8A19-CD42A16C48C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {322615E1-B642-4E16-93E5-C43E28F28AF5}
+	EndGlobalSection
+EndGlobal
