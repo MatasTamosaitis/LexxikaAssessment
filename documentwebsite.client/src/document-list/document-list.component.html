@@ -1,17 +1,22 @@
-<h2>Document List</h2>
+<div class="document-container">
+  <h2>Document List</h2>
 
-<!-- File List -->
-<ul>
-  <li *ngFor="let document of documents">
-    <span (click)="selectDocument(document)" class="clickable">{{ document.fileName }}</span>
-    <button (click)="deleteFile(document.fileName)" class="delete-btn">🗑️</button>
-  </li>
-</ul>
+  <div class="document-form">
+    <input type="text" [(ngModel)]="newFileName" placeholder="Enter file name" />
+    <textarea [(ngModel)]="newFileContent" placeholder="Enter file content"></textarea>
+    <button (click)="createNewFile()">Create File</button>
+  </div>
 
-<!-- File Editor -->
-<div *ngIf="selectedDocument">
-  <h3>Editing: {{ selectedDocument.fileName }}</h3>
-  <textarea [(ngModel)]="selectedDocument.content" rows="10" cols="50"></textarea>
-  <br />
-  <button (click)="saveChanges()" class="save-btn">Save Changes</button>
+  <ul class="document-list">
+    <li *ngFor="let doc of documents" (click)="selectDocument(doc)">
+      {{ doc.fileName }}
+      <button class="delete-btn" (click)="deleteFile(doc.fileName); $event.stopPropagation();">Delete</button>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedDocument" class="document-editor">
+    <h3>Edit Document: {{ selectedDocument.fileName }}</h3>
+    <textarea [(ngModel)]="selectedDocument.content"></textarea>
+    <button (click)="saveChanges()">Save Changes</button>
+  </div>
 </div>

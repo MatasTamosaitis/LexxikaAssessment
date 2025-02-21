@@ -19,23 +19,23 @@ export class DocumentWebsiteService
 
   validateUser(email: string, password: string) {
 
-    return this.http.post('https://localhost:32775/api/account/getaccount', { email, password })
+    return this.http.post('https://localhost:32769/api/account/getaccount', { email, password })
       .pipe(catchError(HttpErrorHandler.handleError));
   }
 
   getDocuments(): Observable<DocumentFile[]> {
-    return this.http.get<DocumentFile[]>('https://localhost:32775/api/document/getdocuments');
+    return this.http.get<DocumentFile[]>('https://localhost:32769/api/document/getdocuments');
   }
 
   updateDocument(fileName: string, content: string): Observable<any> {
-    return this.http.post('https://localhost:32775/api/document/updatedocuments', { fileName, content });
+    return this.http.post('https://localhost:32769/api/document/updatedocuments', { fileName, content });
   }
 
   createDocument(fileName: string, content: string): Observable<any> {
-    return this.http.post('https://localhost:32775/api/document/createDocument', { fileName, content });
+    return this.http.post('https://localhost:32769/api/document/createDocument', { fileName, content });
   }
 
   deleteDocument(fileName: string): Observable<any> {
-    return this.http.delete(`https://localhost:32775/api/document/deleteDocument/${fileName}`);
+    return this.http.delete(`https://localhost:32769/api/document/deleteDocument/${fileName}`);
   }
 }
